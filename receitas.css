@@ -1,0 +1,78 @@
+/* Estilo para o corpo da página */
+body {
+  background-color: #ffcccc; /* Cor de fundo rosa */
+}
+
+/* Área de agrupamento dos painéis das receitas */
+.painel-receitas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Estilos para cada painel de receita */
+.receita {
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #9a0c0c;
+  border-radius: 8px;
+  background-color: #ffcccc;
+  position: relative;
+}
+
+/* Estilos para a foto do prato */
+.receita img {
+  width: calc(100% + 30px); /* Ajuste para cobrir as bordas */
+  height: auto;
+  border-top-left-radius: 8px; /* Canto superior esquerdo redondo, seguindo o raio do painel */
+  border-top-right-radius: 8px; /* Canto superior direito redondo, seguindo o raio do painel */
+  border-bottom-left-radius: 0px; /* Canto inferior esquerdo redondo, seguindo o raio do painel */
+  border-bottom-right-radius: 0px; /* Canto inferior direito redondo, seguindo o raio do painel */
+  margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+  margin-left: -15px; /* Ajuste para cobrir a borda esquerda */
+  margin-top: -15px; /* Ajuste para cobrir a borda superior */
+}
+
+
+  margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+  margin-left: -15px; /* Ajuste para cobrir a borda esquerda */
+  margin-top: -15px; /* Ajuste para cobrir a borda superior */
+}
+
+/* Estilos para o nome da receita */
+.receita h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilos para a lista de itens da receita com marcador personalizado */
+.receita ul {
+  padding: 19px;
+  list-style-type: disc; /* Marcadores padrão da lista */
+}
+
+/* Campo pra colocar Marcador personalizado 
+.receita ul li {
+  padding-left: 10px; * Espaçamento à esquerda para acomodar o marcador * 
+  background: url('coloqueSuaImagemAqui.png') no-repeat left center;
+  background-size: 17px;  * Tamanho do marcador * 
+} */
+
+/* Estilos para separador entre ingredientes e modo de preparo */
+.receita .separador {
+  border-top: 2px solid #000; /* Linha horizontal */
+  margin: 20px 0; /* Espaçamento acima e abaixo do separador */
+  text-align: center; /* Centralizar o texto "Modo de Preparo" */
+}
+
+/* Estilos para o texto "Modo de Preparo" */
+.receita .modo-preparo {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+
+
+

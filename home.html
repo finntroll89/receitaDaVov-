@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="formatos.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Receitas da Vovó</title>
+</head>
+<body>
+  <header>
+    <img class="logo" src="C:\Users\walll\OneDrive\Área de Trabalho\receitas\logodavovó.jpg" alt="Logo">
+    <h1>Receitas da Vovó</h1>
+    <p>Bem-vindo à cozinha nostálgica dos anos 80!</p>
+ <!-- Menu de navegação -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+<!-- Itens do menu -->
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="receitas.html">Receita</a>
+    <li class="nav-item">
+      <a class="nav-link" href="cadastro.html">Cadastro</a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+      </header>
+
+ <main>
+   <h4> Bem-vindo ao mundo encantador da Vovó Violeta, um cantinho virtual onde os aromas nostálgicos e os sabores caseiros se entrelaçam para criar uma experiência gastronômica única. Inspirado nas cozinhas das décadas passadas, Vovó Violeta é um refúgio para todos os amantes da boa comida, proporcionando receitas clássicas e tradicionais que aquecem o coração.
+
+   <p> Embarque em uma jornada culinária repleta de receitas testadas e aprovadas pelo tempo, transmitidas de geração em geração. 
+    De pratos reconfortantes, como o clássico bolo de cenoura com cobertura de chocolate, a segredos de família guardados a sete chaves, aqui você encontrará uma variedade de opções para satisfazer todos os paladares.
+    
+    Desvende os mistérios da cozinha com dicas e truques valiosos da Vovó Violeta, uma verdadeira especialista na arte de transformar ingredientes simples em banquetes irresistíveis.</p> 
+    <p>Explore receitas para todas as ocasiões, desde café da manhã até jantares festivos, e descubra como cada prato conta uma história única.
+    
+    Navegue pelas categorias, como "Clássicos dos Anos 80", "Delícias de Domingo" e "Bolos que Contam Histórias", para encontrar a receita perfeita para cada momento especial. Além disso, sinta-se à vontade para compartilhar suas próprias receitas e memórias culinárias, fazendo parte da comunidade afetuosa que celebra a tradição e o sabor.
+    
+    Vovó Violeta é mais do que um site de receitas; é um convite para criar laços, compartilhar risadas e celebrar a magia que acontece quando nos reunimos em torno da mesa.</p> 
+    Prepare-se para uma jornada de sabor, tradição e amor, porque aqui, na cozinha da Vovó Violeta, cada prato é uma lembrança, e cada sabor é um abraço caloroso do passado. Aproveite sua estadia!</h4>
+  </main>
+ 
+
+   <!-- Rodapé -->
+   <footer class="bg-dark text-white text-center p-2">
+    <p>&copy; 2023 Receitas da Vovó Violeta. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Pega a URL atual da página
+    var url = window.location.href;
+    
+    // Seleciona os links da barra de navegação
+    var links = document.querySelectorAll('.navbar-nav a');
+    
+    // Itera sobre os links
+    links.forEach(function (link) {
+      // Compara a URL atual com o href do link
+      if (link.href === url) {
+        // Adiciona a classe 'active' se houver correspondência
+        link.classList.add('active');
+      }
+    });
+  </script>
+
+</body>
+</html>

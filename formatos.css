@@ -1,0 +1,56 @@
+/* Estilos gerais */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #ffcccb;
+  color: #8b4513;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Estilos para a logotipo */
+.logo {
+  width: 160px;
+  height: 160px;
+}
+
+/* Estilos para a barra de navegação */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffa07a;
+  padding: 0.5em;
+}
+
+/* Adicione padding para manter o conteúdo alinhado */
+nav.navbar {
+  padding: 0 20px;
+}
+
+/* Estilos para a área principal */
+main {
+  padding: 2em;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #ffcccb;
+  color: #8b4513;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Estilos para os links na barra de navegação */
+nav a {
+  text-decoration: none;
+  color: #8b4513;
+}
+
+
+
+
