@@ -9,55 +9,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <style>
-       
-       
-       /* Estilos personalizados para ajustar as dimensões */
+        /* Estilos personalizados para ajustar as dimensões */
         body {
             background-color: #ffc0cb; /* Cor de fundo rosa */
-            
         }
 
-        h1, /* Seleciona todos os elementos h1 */
-        title /* Seleciona o elemento title */ {
-            color: #8b4513; /* Define a cor do texto como #ffcccc */
-            text-align: center; /* Centraliza o texto horizontalmente */
+        h1,
+        title {
+            color: #8b4513;
+            text-align: center;
         }
+
         header {
-            height: 60px; /* Altura do cabeçalho */
+            height: 60px;
         }
 
         main {
-            height: calc(100vh - 100px); /* Altura da área principal */
-            overflow-y: auto; /* Barra de rolagem automática */
+            height: calc(100vh - 100px);
+            overflow-y: auto;
         }
 
         footer {
-            height: 25px; /* Altura do rodapé */
+            height: 25px;
         }
-
-       
-        
     </style>
-
-<h1>Receitas da Vovó Violeta</h1>
- <!-- Menu de navegação -->
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
- 
-    <!-- Itens do menu -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="receitas.html">Receita</a>
-        <li class="nav-item">
-          <a class="nav-link" href="cadastro.html">Cadastro</a>
-        </li>
-      </ul>
-    </div>
-    </nav>
-  
 </head>
 
 <body>
@@ -65,6 +40,30 @@
     <!-- Área principal -->
     <main class="container-fluid">
         <h1>Cadastro de Usuário</h1>
+
+<!-- Menu de navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Botão de alternância para telas pequenas -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Itens do menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="receitas.html">Receita</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
         <!-- Formulário Bootstrap -->
         <form>
@@ -119,35 +118,37 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-dark text-white text-center p-2">
+    <footer class="bg-dark text-white text-center p-3,1">
         <p>&copy; 2023 Receitas da Vovó Violeta. Todos os direitos reservados.</p>
-      </footer>
-      
-      
+    </footer>
+
 
     <!-- Bootstrap JavaScript (opcional, use apenas se precisar de funcionalidades JS) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-yQFAv3Z+PpLXR6S/QmMZYDO93o+U2eA3+JkoSg6L+6m/xpCbuvlfOw5CgA4zN3ce"
         crossorigin="anonymous"></script>
-      
-        <script>
-            // Pega a URL atual da página
-            var url = window.location.href;
-            
-            // Seleciona os links da barra de navegação
-            var links = document.querySelectorAll('.navbar-nav a');
-            
-            // Itera sobre os links
-            links.forEach(function (link) {
-              // Compara a URL atual com o href do link
-              if (link.href === url) {
+       
+        
+    <script>
+        // código JavaScript para ativar a classe active pega a URL atual da página
+        var url = window.location.href;
+
+        // Seleciona os links da barra de navegação
+        var links = document.querySelectorAll('.navbar-nav a');
+
+        // Itera sobre os links
+        links.forEach(function (link) {
+            // Compara a URL atual com o href do link
+            if (link.href === url) {
                 // Adiciona a classe 'active' se houver correspondência
                 link.classList.add('active');
-              }
-            });
-          </script>
+            }
+        });
+    </script>
 
 </body>
 
 </html>
+
+
 

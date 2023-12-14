@@ -1,7 +1,17 @@
+/* Adicione esta regra para a cor de fundo rosa no cabeçalho header */
+.fundo-rosa {
+  background-color: #ffcccc; /* Cor de fundo rosa */
+
 /* Estilo para o corpo da página */
 body {
-  background-color: #ffcccc; /* Cor de fundo rosa */
+  background-color: #f00e0e; /* Cor de fundo rosa */
 }
+
+/* Adicione esta regra para a cor de fundo rosa */
+.fundo-rosa {
+  background-color: #ffcccc; /* ou qualquer outra cor rosa  */
+}
+
 
 /* Área de agrupamento dos painéis das receitas */
 .painel-receitas {
@@ -34,7 +44,7 @@ body {
   margin-top: -15px; /* Ajuste para cobrir a borda superior */
 }
 
-
+.receita img {
   margin-bottom: 10px; /* Espaçamento abaixo da imagem */
   margin-left: -15px; /* Ajuste para cobrir a borda esquerda */
   margin-top: -15px; /* Ajuste para cobrir a borda superior */
@@ -45,6 +55,12 @@ body {
   font-size: 1.2em;
   margin-bottom: 10px;
   text-align: center;
+  color: #8b4513;
+}
+
+/* Adicionando cor personalizada ao texto centralizado */
+.text-center.cor-personalizada {
+  color: #8b4513; /*Cor */
 }
 
 /* Estilos para a lista de itens da receita com marcador personalizado */
@@ -73,6 +89,16 @@ body {
   margin-bottom: 10px;
 }
 
+/* Estilos específicos para telas menores, como tablets e smartphones */
+@media only screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  nav.navbar {
+    padding: 0;
+  }
+}
 
 

@@ -50,6 +50,20 @@ nav a {
   text-decoration: none;
   color: #8b4513;
 }
+/* Estilos específicos para telas menores, como tablets e smartphones */
+@media only screen and (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.navbar {
+    padding: 0;
+  }
+}
+
+
+
 
 
 

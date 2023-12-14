@@ -4,32 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="formatos.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
   <title>Receitas da Vovó</title>
 </head>
 <body>
   <header>
-    <img class="logo" src="C:\Users\walll\OneDrive\Área de Trabalho\receitas\logodavovó.jpg" alt="Logo">
+    <img class="logo" src="logodavovó.jpg" alt="Logo">
     <h1>Receitas da Vovó</h1>
     <p>Bem-vindo à cozinha nostálgica dos anos 80!</p>
  <!-- Menu de navegação -->
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  
+  <!-- Botão de alternância do menu -->
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
 <!-- Itens do menu -->
 <div class="collapse navbar-collapse" id="navbarNav">
   <ul class="navbar-nav">
-
     <li class="nav-item">
       <a class="nav-link" href="home.html">Menu</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="receitas.html">Receita</a>
+    </li>
     <li class="nav-item">
       <a class="nav-link" href="cadastro.html">Cadastro</a>
     </li>
   </ul>
 </div>
-</nav>
 
       </header>
 
@@ -48,24 +52,22 @@
     Prepare-se para uma jornada de sabor, tradição e amor, porque aqui, na cozinha da Vovó Violeta, cada prato é uma lembrança, e cada sabor é um abraço caloroso do passado. Aproveite sua estadia!</h4>
   </main>
  
-
    <!-- Rodapé -->
-   <footer class="bg-dark text-white text-center p-2">
+   <footer class="bg-dark text-white text-center p-1">
     <p>&copy; 2023 Receitas da Vovó Violeta. Todos os direitos reservados.</p>
   </footer>
 
+<!-- jQuery e Bootstrap JS -->
+<!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <script>
-    // Pega a URL atual da página
+    //  código JavaScript para ativar a classe 'active'
     var url = window.location.href;
-    
-    // Seleciona os links da barra de navegação
     var links = document.querySelectorAll('.navbar-nav a');
-    
-    // Itera sobre os links
     links.forEach(function (link) {
-      // Compara a URL atual com o href do link
       if (link.href === url) {
-        // Adiciona a classe 'active' se houver correspondência
         link.classList.add('active');
       }
     });

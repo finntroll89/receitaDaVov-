@@ -4,39 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Receitas da Vovó Violeta</title>
-  <link rel="stylesheet" type="text/css" href="formatos.css">
   <link rel="stylesheet" type="text/css" href="receitas.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-  <header>
-    <h1>Receitas da Vovó Violeta</h1>
+  <header class="fundo-rosa">
+    <h1 class="text-center cor-personalizada">Receitas da Vovó Violeta</h1>
  <!-- Menu de navegação -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
  
+ <!-- Botão de alternância do menu -->
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
 
 <!-- Itens do menu -->
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="home.html">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="receitas.html">Receita</a>
-      <li class="nav-item">
-        <a class="nav-link" href="cadastro.html">Cadastro</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="receitas.html">Receita</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cadastro.html">Cadastro</a>
+    </li>
+  </ul>
+</div>
 
   </header>
 
-  <main>
+  <main class="fundo-rosa">
     <section class="painel-receitas">
       <!-- Receita 1 -->
       <div class="receita">
-        <img src="C:\Users\walll\OneDrive\Área de Trabalho\receitas\bolo de chocolate.jpg" alt="Bolo de Chocolate">
+        <img src="bolo de chocolate.jpg" alt="Bolo de Chocolate">
         <h2>Bolo de Chocolate</h2>
         
         <ul>
@@ -78,7 +82,7 @@
 
       <!-- Receita 2 -->
       <div class="receita">
-        <img src="C:\Users\walll\OneDrive\Área de Trabalho\receitas\pao de queijo.jpg" alt="Pão de queijo">
+        <img src="pao de queijo.jpg" alt="Pão de queijo">
         <h2>Pão de queijo </h2>
         
         <ul>
@@ -121,7 +125,7 @@
 
       <!-- Receita 3 -->
       <div class="receita">
-        <img src="C:\Users\walll\OneDrive\Área de Trabalho\receitas\sopa.jpg" alt="Sopa de legumes">
+        <img src="sopa.jpg" alt="Sopa de legumes">
         <h2>Sopa de legumes</h2>
        
         <ul>
@@ -173,7 +177,7 @@
   </main>
 
    <!-- Rodapé -->
-   <footer class="bg-dark text-white text-center p-2">
+   <footer class="bg-dark text-white text-center p-3,1">
     <p>&copy; 2023 Receitas da Vovó Violeta. Todos os direitos reservados.</p>
   </footer>
   
