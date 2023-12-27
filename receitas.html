@@ -5,23 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Receitas da Vovó Violeta</title>
   <link rel="stylesheet" type="text/css" href="receitas.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
 </head>
 <body>
   <header class="fundo-rosa">
     <h1 class="text-center cor-personalizada">Receitas da Vovó Violeta</h1>
- <!-- Menu de navegação -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- Itens do menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
  
- <!-- Botão de alternância do menu -->
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+ </button>
+ 
 
+    <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav collapse-in">
 
-<!-- Itens do menu -->
-<div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link" href="home.html">Menu</a>
     </li>
@@ -35,9 +37,10 @@
 </div>
 
   </header>
-
+  <!-- cor do fundo e painel de receitas -->
   <main class="fundo-rosa">
     <section class="painel-receitas">
+
       <!-- Receita 1 -->
       <div class="receita">
         <img src="bolo de chocolate.jpg" alt="Bolo de Chocolate">
@@ -55,7 +58,8 @@
           <li>1 colher (chá) de bicarbonato de sódio</li>
           <!-- Adicione mais itens conforme necessário -->
         </ul>
-        
+
+  <!-- separador -->      
   <div class="separador">
     <span class="modo-preparo"><h2>Modo de Preparo</h2></span>
   </div>
@@ -140,7 +144,7 @@
           <li>Sal e pimenta a gosto</li>
           <!-- Adicione mais itens conforme necessário -->
         </ul>
-        
+    <!-- Separador -->    
   <div class="separador">
     <span class="modo-preparo"><h2>Modo de Preparo</h2></span>
   </div>
@@ -181,6 +185,16 @@
     <p>&copy; 2023 Receitas da Vovó Violeta. Todos os direitos reservados.</p>
   </footer>
   
+<!-- jQuery e Bootstrap JS -->
+  
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+ crossorigin="anonymous"></script>
+ 
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+
   <script>
     // Pega a URL atual da página
     var url = window.location.href;

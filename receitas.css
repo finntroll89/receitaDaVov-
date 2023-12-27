@@ -89,6 +89,11 @@ body {
   margin-bottom: 10px;
 }
 
+/* Estilos para os links na barra de navegação */
+nav a {
+  text-decoration: none;
+  color: #8b4513;
+}
 /* Estilos específicos para telas menores, como tablets e smartphones */
 @media only screen and (max-width: 767px) {
   nav {
